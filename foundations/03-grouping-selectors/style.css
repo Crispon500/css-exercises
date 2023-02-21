@@ -1,0 +1,14 @@
+.press-me,
+.no-press-me {
+    font-size: 28px;
+    font-family: Helvetica,"Times New Roman", sans-serif;
+}
+
+.press-me {
+    color:white;
+    background-color: black;
+}
+
+.no-press-me {
+    background-color: yellow;
+}
