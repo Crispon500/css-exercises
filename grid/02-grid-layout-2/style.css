@@ -8,6 +8,10 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(7, 2fr);
+  gap: 1rem;
 }
 
 .container div {
@@ -21,20 +25,34 @@ body, html {
 
 .header {
   background-color: #FFDE22;
-  grid-column: 1 / 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .sidebar {
   background-color: #FF7755;
-  grid-row: 2 / 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 7;
 }
 
 .nav {
   background-color: #00DDFF;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .article {
   background-color: #bccbde;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 7;
 }
 
 .article p {
@@ -46,5 +64,10 @@ body, html {
 
 .footer {
   background-color: #393f4d;
-  grid-column: 1 / 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
 }
+
+
